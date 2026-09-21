@@ -1,0 +1,328 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Facebook-login</title>
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    color: #1c1e21;
+}
+
+
+/* =========================
+   MAIN PAGE
+========================= */
+
+.page {
+    height: calc(100vh - 55px);
+    display: flex;
+}
+
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.left-section {
+    width: 63%;
+    height: 100%;
+    position: relative;
+
+    padding: 32px 40px;
+
+    border-right: 1px solid #ddd;
+}
+
+
+/* Facebook logo */
+
+.facebook-logo {
+    width: 42px;
+    height: 42px;
+
+    background: #1877f2;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 38px;
+    font-weight: bold;
+}
+
+
+/* Headline */
+
+.left-section h1 {
+    position: absolute;
+
+    left: 40px;
+    bottom: 45px;
+
+    font-size: 42px;
+    line-height: 1.05;
+    font-weight: 400;
+
+    letter-spacing: -1.5px;
+}
+
+.left-section h1 span {
+    color: #1877f2;
+}
+
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.right-section {
+    width: 37%;
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Login box */
+
+.login-container {
+    width: 360px;
+}
+
+
+/* Heading */
+
+.login-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+form input {
+    width: 100%;
+    height: 40px;
+
+    padding: 0 12px;
+
+    border: 1px solid #ccd0d5;
+    border-radius: 8px;
+
+    font-size: 12px;
+
+    outline: none;
+}
+
+form input:focus {
+    border-color: #1877f2;
+}
+
+
+/* Login button */
+
+.login-btn {
+    width: 100%;
+    height: 40px;
+
+    margin-top: 2px;
+
+    border: none;
+    border-radius: 20px;
+
+    background: #1877f2;
+    color: white;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.hero-image {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 550px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* =========================
+   FORGOTTEN PASSWORD
+========================= */
+
+.forgot-password {
+    display: block;
+
+    margin-top: 14px;
+
+    text-align: center;
+
+    font-size: 11px;
+
+    color: #65676b;
+
+    text-decoration: none;
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.divider {
+    width: 100%;
+    height: 1px;
+
+    background: #ddd;
+
+    margin: 25px 0;
+}
+
+
+/* =========================
+   CREATE ACCOUNT
+========================= */
+
+.create-account {
+    width: 100%;
+    height: 40px;
+
+    border: 1px solid #8b8fa3;
+    border-radius: 20px;
+
+    background: white;
+
+    color: #4267b2;
+
+    font-size: 11px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   META
+========================= */
+
+.meta {
+    text-align: center;
+
+    margin-top: 14px;
+
+    font-size: 11px;
+
+    color: #65676b;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 22px;
+
+    border-top: 1px solid #eee;
+
+    font-size: 10px;
+}
+
+footer a {
+    color: #8a8d91;
+    text-decoration: none;
+}
+</style>
+
+</head>
+
+<body>
+<main class="page">
+
+
+
+<!-- left side -->
+
+<section class="left-section">
+
+<div class="facebook-logo">f</div>
+
+<h1>Explore<br>the<br>things<br><span>you love.</span>
+</h1>
+<div class="hero-Image">
+<img src="Screenshot 2026-08-26 at 07.08.07.png" alt="Explore">
+</div>
+</section>
+
+<!-- right side -->
+<section class="right-section">
+<div class="login-container">
+
+<h2 class="login-title">Log in to facebook</h2>
+
+<form>
+<input type="text" id="email" name="email" placeholder="Email or phone number">
+<input type="password" id="pwd" name="pwd" placeholder="Password" required>
+<button class="login-btn">Log in</button>
+</form>
+
+<a href="#" class="forgot-password">Forgotten password?</a>
+
+<div class="divider"></div>
+
+<button class=" create-account">Create new account</button>
+<p class="meta">Meta</p>
+</div>
+
+</section>
+</main>
+
+<footer>
+
+        <a href="#">English (UK)</a>
+        <a href="#">Hausa</a>
+        <a href="#">Français (France)</a>
+        <a href="#">Português (Brasil)</a>
+        <a href="#">Español</a>
+        <a href="#">Bahasa Indonesia</a>
+        <a href="#">More languages...</a>
+		</footer>
+</body>
+</html>
