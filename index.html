@@ -269,6 +269,79 @@ footer a {
     color: #8a8d91;
     text-decoration: none;
 }
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    .page {
+        height: auto;
+        min-height: calc(100vh - 55px);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-section {
+        width: 100%;
+        height: auto;
+        min-height: 420px;
+
+        padding: 25px;
+
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .facebook-logo {
+        width: 38px;
+        height: 38px;
+        font-size: 32px;
+    }
+
+    .left-section h1 {
+        position: static;
+
+        margin-top: 60px;
+
+        font-size: 36px;
+        line-height: 1.05;
+    }
+
+    .hero-image {
+        position: static;
+
+        transform: none;
+
+        width: 100%;
+        max-width: 450px;
+
+        margin: 30px auto 0;
+    }
+
+    .right-section {
+        width: 100%;
+        height: auto;
+
+        padding: 40px 25px;
+    }
+
+    .login-container {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    footer {
+        height: auto;
+
+        padding: 15px 20px;
+
+        flex-wrap: wrap;
+
+        gap: 12px;
+    }
+}
 </style>
 
 </head>
@@ -286,7 +359,7 @@ footer a {
 
 <h1>Explore<br>the<br>things<br><span>you love.</span>
 </h1>
-<div class="hero-Image">
+<div class="hero-image">
 <img src="Screenshot 2026-08-26 at 07.08.07.png" alt="Explore">
 </div>
 </section>
